@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>アライグマイクロビキニ — Webマニュアル | Pokonya_shop</title>
+  <meta name="description" content="【VRC想定】アライグマイクロビキニの導入マニュアル。Modular Avatar対応、ドラッグ＆ドロップで簡単導入。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== HERO ========== -->
+  <header class="hero">
+    <div class="container">
+      <span class="hero__emoji">🦝👙</span>
+      <h1 class="hero__title">アライグマイクロビキニ — Webマニュアル</h1>
+      <p class="hero__sub">Araiguma Micro Bikini — Installation &amp; User Guide</p>
+      <span class="hero__badge">📖 Pokonya_shop Official Manual</span>
+    </div>
+  </header>
+
+  <!-- ========== LANGUAGE TABS ========== -->
+  <div class="container">
+    <div class="lang-tabs" role="tablist">
+      <button class="lang-tab active" data-lang="ja" role="tab" aria-selected="true">🇯🇵 日本語</button>
+      <button class="lang-tab" data-lang="en" role="tab" aria-selected="false">🇬🇧 English</button>
+      <button class="lang-tab" data-lang="zh" role="tab" aria-selected="false">🇨🇳 中文</button>
+      <button class="lang-tab" data-lang="ko" role="tab" aria-selected="false">🇰🇷 한국어</button>
+    </div>
+
+    <!-- ==============================
+         日本語 (JA)
+         ============================== -->
+    <div class="lang-content active" id="lang-ja">
+
+      <div class="alert alert--warn">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <strong>ご利用前に必ずお読みください</strong><br>
+          本商品をご使用になる前に、<a href="terms.html">利用規約（LICENSEページ）</a>を必ずご確認ください。
+          本マニュアルの記載内容と利用規約の間に矛盾がある場合は、利用規約が優先されます。
+        </div>
+      </div>
+
+      <!-- 1. 概要 -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">✨</span> 商品概要</h2>
+        <div class="card">
+          <p>「ねぇ、これ……ちょっと小さすぎないかな？ ……でも、君が好きなら、着てあげてもいいよ？」</p>
+          <br>
+          <p>Pokonya_shopがおくる、あざとさ全開のマイクロビキニです！ アライグマのキュートなセットと、限界まで攻めたデザインが特徴。</p>
+          <br>
+          <ul>
+            <li>対応アバター: <strong>しなの</strong>（デフォルトで位置調整済み）</li>
+            <li>Modular Avatar対応 — ドラッグ＆ドロップですぐ着せ替え完了！</li>
+          </ul>
+          <br>
+          <p class="tag tag--cond">※もちふぃった～適正のある『しなの』を元に調整しています。他アバターへの対応は保証しておりません。</p>
+        </div>
+      </section>
+
+      <!-- 2. 動作環境 -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">💻</span> 動作環境</h2>
+        <div class="card">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>項目</th><th>推奨環境</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Unity</td><td>2022.3.61f1（VRChat正式対応バージョン）</td></tr>
+                <tr><td>シェーダー</td><td>lilToon（事前にインポートしてください）</td></tr>
+                <tr><td>ツール</td><td>Modular Avatar（推奨）</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. 導入手順 -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">🚀</span> 導入手順（Installation）</h2>
+
+        <div class="alert alert--info">
+          <span class="alert-icon">💡</span>
+          <div>
+            <strong>事前準備</strong>：lilToon と Modular Avatar を先にUnityプロジェクトへインポートしておいてください。
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="steps">
+            <div class="step">
+              <div class="step__title">Step 1 — Unityパッケージのインポート</div>
+              <div class="step__desc">
+                ダウンロードした <code>.unitypackage</code> をUnityプロジェクトにドラッグ＆ドロップしてインポートします。
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__title">Step 2 — Prefabをアバターに配置</div>
+              <div class="step__desc">
+                インポートしたPrefabを、Hierarchy上のアバター（しなの）の直下にドラッグ＆ドロップします。<br>
+                Modular Avatarが自動的にアバターへの装着を行います。
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__title">Step 3 — 位置の確認・微調整</div>
+              <div class="step__desc">
+                「しなの」の場合、デフォルトで位置調整済みです。必要に応じてスケール用のシェイプキー等で微調整を行ってください。
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__title">Step 4 — アップロード</div>
+              <div class="step__desc">
+                VRChat SDK からアバターをアップロードすれば完了です🎉
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. シェーダー設定 -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">🎨</span> シェーダー設定（lilToon 推奨値）</h2>
+        <div class="card">
+          <p>本商品はlilToon向けに最適化されています。インポート時にシェーダーが自動で割り当てられますが、マテリアルがピンクになる場合は以下をご確認ください。</p>
+          <br>
+          <ul>
+            <li>lilToonが正しくインポートされているか確認</li>
+            <li>マテリアルのシェーダーが <code>lilToon</code> に設定されているか確認</li>
+            <li>テクスチャが正しくアサインされているか確認</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 5. 内容物 -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">📦</span> 内容物</h2>
+        <div class="card">
+          <ul>
+            <li>Webマニュアル・利用規約へのショートカット</li>
+            <li>Unity Package（.unitypackage）</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 6. トラブルシューティング -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">🔧</span> トラブルシューティング</h2>
+        <div class="card">
+          <h3 class="card__title">Q. マテリアルがピンク色になる</h3>
+          <p>lilToonが正しくインポートされていない可能性があります。VCC (VRChat Creator Companion) から lilToon を追加してください。</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Q. 衣装が貫通する</h3>
+          <p>ビキニ側のシェイプキーでスケールを調整するか、アバター側のボディシェイプキーを絞って調整してください。</p>
+        </div>
+      </section>
+
+    </div><!-- /lang-ja -->
+
+
+    <!-- ==============================
+         English (EN)
+         ============================== -->
+    <div class="lang-content" id="lang-en">
+
+      <div class="alert alert--warn">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <strong>Please read before use</strong><br>
+          Before using this product, please review the <a href="terms.html">Terms of Use (LICENSE page)</a>.
+          In case of any conflict between this manual and the Terms of Use, the Terms of Use shall prevail.
+        </div>
+      </div>
+
+      <!-- 1. Overview -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">✨</span> Product Overview</h2>
+        <div class="card">
+          <p>"Hey, isn't this… a little too small? …But if you like it, I'll wear it for you, okay?"</p>
+          <br>
+          <p>From Pokonya_shop — an irresistibly cute micro bikini! Featuring an adorable raccoon set with a daringly minimal design.</p>
+          <br>
+          <ul>
+            <li>Compatible Avatar: <strong>Shinano</strong> (pre-adjusted by default)</li>
+            <li>Modular Avatar compatible — drag &amp; drop setup!</li>
+          </ul>
+          <br>
+          <p class="tag tag--cond">*Adjusted based on "Shinano", who possesses a high "Mochi Fitter" aptitude. Compatibility with other avatars is not guaranteed.</p>
+        </div>
+      </section>
+
+      <!-- 2. Requirements -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">💻</span> System Requirements</h2>
+        <div class="card">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Item</th><th>Requirement</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Unity</td><td>2022.3.61f1 (VRChat official supported version)</td></tr>
+                <tr><td>Shader</td><td>lilToon (must be imported beforehand)</td></tr>
+                <tr><td>Tool</td><td>Modular Avatar (recommended)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Installation -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">🚀</span> Installation</h2>
+
+        <div class="alert alert--info">
+          <span class="alert-icon">💡</span>
+          <div>
+            <strong>Prerequisites</strong>: Please import lilToon and Modular Avatar into your Unity project first.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="steps">
+            <div class="step">
+              <div class="step__title">Step 1 — Import Unity Package</div>
+              <div class="step__desc">
+                Drag &amp; drop the downloaded <code>.unitypackage</code> into your Unity project.
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__title">Step 2 — Place Prefab</div>
+              <div class="step__desc">
+                Drag &amp; drop the imported Prefab under your avatar (Shinano) in the Hierarchy.<br>
+                Modular Avatar will automatically attach it.
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__title">Step 3 — Verify Position</div>
+              <div class="step__desc">
+                For Shinano, the position is pre-adjusted. Use the scale shape keys for minor adjustments if necessary.
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__title">Step 4 — Upload</div>
+              <div class="step__desc">
+                Upload your avatar via the VRChat SDK and enjoy! 🎉
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Shader Settings -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">🎨</span> Shader Settings (lilToon)</h2>
+        <div class="card">
+          <p>If the materials appear bright pink after importing, please check the following:</p>
+          <br>
+          <ul>
+            <li>Ensure lilToon is properly imported</li>
+            <li>Check that the material shader is set to <code>lilToon</code></li>
+            <li>Verify that textures are correctly assigned to the material</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 5. Contents -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">📦</span> Contents</h2>
+        <div class="card">
+          <ul>
+            <li>Web Manual &amp; Terms of Use shortcut</li>
+            <li>Unity Package (.unitypackage)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 6. Troubleshooting -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">🔧</span> Troubleshooting</h2>
+        <div class="card">
+          <h3 class="card__title">Q. Materials appear pink</h3>
+          <p>lilToon may not be installed. Add lilToon through the VCC (VRChat Creator Companion).</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Q. Clothing clips through the body</h3>
+          <p>Adjust the scale using the bikini's shape keys, or shrink the avatar's body shape keys to prevent clipping.</p>
+        </div>
+      </section>
+
+    </div><!-- /lang-en -->
+
+
+    <!-- ==============================
+         中文 (ZH)
+         ============================== -->
+    <div class="lang-content" id="lang-zh">
+
+      <div class="alert alert--warn">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <strong>使用前请务必阅读</strong><br>
+          在使用本商品之前，请务必查看<a href="terms.html">使用条款（LICENSE）</a>。
+          如果本手册的内容与使用条款存在冲突，以使用条款为准。
+        </div>
+      </div>
+
+      <!-- 1. Overview -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">✨</span> 商品概要</h2>
+        <div class="card">
+          <p>“呐，这个……是不是有点太小了？……不过，如果你喜欢的话，我穿给你看也可以哦？”</p>
+          <br>
+          <p>Pokonya_shop 带来充满诱惑力的微型比基尼！包含可爱的浣熊套装和极具挑战的极限设计。</p>
+          <br>
+          <ul>
+            <li>适配模型: <strong>Shinano（しなの）</strong>（默认已完成位置调整）</li>
+            <li>支持 Modular Avatar — 拖拽即可轻松完成换装！</li>
+          </ul>
+          <br>
+          <p class="tag tag--cond">※基于具有“Mochi Fitter（软糯贴合）”适性的『Shinano』进行调整。不保证完全适配其他模型。</p>
+        </div>
+      </section>
+
+      <!-- 2. Requirements -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">💻</span> 运行环境</h2>
+        <div class="card">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>项目</th><th>推荐环境</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Unity</td><td>2022.3.61f1（VRChat官方推荐版本）</td></tr>
+                <tr><td>着色器 (Shader)</td><td>lilToon（请预先导入）</td></tr>
+                <tr><td>工具</td><td>Modular Avatar（推荐）</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Installation -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">🚀</span> 导入步骤（Installation）</h2>
+
+        <div class="alert alert--info">
+          <span class="alert-icon">💡</span>
+          <div>
+            <strong>事前准备</strong>：请先在 Unity 项目中导入 lilToon 和 Modular Avatar。
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="steps">
+            <div class="step">
+              <div class="step__title">Step 1 — 导入 Unity Package</div>
+              <div class="step__desc">
+                将下载好的 <code>.unitypackage</code> 拖拽到 Unity 项目中进行导入。
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__title">Step 2 — 将 Prefab 放入模型中</div>
+              <div class="step__desc">
+                将导入的 Prefab 拖拽到 Hierarchy 中的模型（Shinano）之下。<br>
+                Modular Avatar 会自动完成骨骼绑定和换装。
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__title">Step 3 — 确认位置并微调</div>
+              <div class="step__desc">
+                对于『Shinano』，位置默认已对齐。如需调整，可使用衣物自带的缩放形态键（Shape keys）进行微调。
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__title">Step 4 — 上传模型</div>
+              <div class="step__desc">
+                通过 VRChat SDK 上传模型即可完成🎉
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Shader Settings -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">🎨</span> 着色器设置（lilToon 推荐）</h2>
+        <div class="card">
+          <p>本产品针对 lilToon 进行了优化。如果导入后材质发粉红，请检查以下内容：</p>
+          <br>
+          <ul>
+            <li>确认 lilToon 是否已正确导入</li>
+            <li>确认材质的着色器是否已设置为 <code>lilToon</code></li>
+            <li>确认贴图是否已正确指定</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 5. Contents -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">📦</span> 内容物</h2>
+        <div class="card">
+          <ul>
+            <li>Web手册及使用条款的快捷方式</li>
+            <li>Unity Package（.unitypackage）</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 6. Troubleshooting -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">🔧</span> 常见问题解答 (Q&amp;A)</h2>
+        <div class="card">
+          <h3 class="card__title">Q. 材质变成了全粉色（紫红色）</h3>
+          <p>说明 lilToon 没有被正确识别。请通过 VCC（VRChat Creator Companion）添加 lilToon。</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Q. 衣服穿模了</h3>
+          <p>请调整比基尼的缩放形态键（Shape keys），或者缩小人物身体的素体形态键。</p>
+        </div>
+      </section>
+
+    </div><!-- /lang-zh -->
+
+
+    <!-- ==============================
+         韩国어 (KO)
+         ============================== -->
+    <div class="lang-content" id="lang-ko">
+
+      <div class="alert alert--warn">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <strong>사용 전 반드시 읽어주세요</strong><br>
+          본 제품을 사용하시기 전에 반드시 <a href="terms.html">이용 약관 (LICENSE)</a>을 확인해 주십시오.
+          본 매뉴얼의 내용과 이용 약관이 상충할 경우, 이용 약관이 우선합니다.
+        </div>
+      </div>
+
+      <!-- 1. Overview -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">✨</span> 상품 개요</h2>
+        <div class="card">
+          <p>"저기, 이거…… 조금 너무 작지 않아? ……그래도, 네가 좋다면 입어줄게……?"</p>
+          <br>
+          <p>Pokonya_shop이 선사하는 심쿵 유발 마이크로 비키니! 귀여운 라쿤 세트와 아슬아슬한 디자인이 특징입니다.</p>
+          <br>
+          <ul>
+            <li>대응 아바타: <strong>시나노 (Shinano)</strong> (기본적으로 위치 조정 완료)</li>
+            <li>Modular Avatar 대응 — 드래그 앤 드롭으로 간편하게 착장 완료!</li>
+          </ul>
+          <br>
+          <p class="tag tag--cond">※'모찌핏(Mochi Fitter)' 적성이 있는 『시나노』를 기준으로 조절되었습니다. 타 아바타에 대한 완벽한 호환성은 보장하지 않습니다.</p>
+        </div>
+      </section>
+
+      <!-- 2. Requirements -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">💻</span> 동작 환경</h2>
+        <div class="card">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>항목</th><th>권장 환경</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Unity</td><td>2022.3.61f1 (VRChat 공식 지원 버전)</td></tr>
+                <tr><td>셰이더</td><td>lilToon (사전에 임포트해 주세요)</td></tr>
+                <tr><td>툴</td><td>Modular Avatar (권장)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Installation -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">🚀</span> 적용 방법 (Installation)</h2>
+
+        <div class="alert alert--info">
+          <span class="alert-icon">💡</span>
+          <div>
+            <strong>사전 준비</strong>: lilToon 및 Modular Avatar를 먼저 Unity 프로젝트에 임포트해 주십시오.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="steps">
+            <div class="step">
+              <div class="step__title">Step 1 — Unity 패키지 임포트</div>
+              <div class="step__desc">
+                다운로드한 <code>.unitypackage</code>를 Unity 프로젝트에 드래그 앤 드롭하여 임포트합니다.
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__title">Step 2 — Prefab을 아바타에 배치</div>
+              <div class="step__desc">
+                임포트한 Prefab을 Hierarchy 창의 아바타(시나노) 최상단 아래에 드래그 앤 드롭합니다.<br>
+                Modular Avatar가 자동으로 옷을 입혀 줍니다.
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__title">Step 3 — 위치 확인 및 미세 조정</div>
+              <div class="step__desc">
+                '시나노'의 경우 기본적으로 위치가 맞춰져 있습니다. 필요에 따라 옷의 스케일 쉐이프 키 등으로 미세 조정해 주십시오.
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__title">Step 4 — 업로드</div>
+              <div class="step__desc">
+                VRChat SDK를 통해 아바타를 업로드하면 끝납니다! 🎉
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Shader Settings -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">🎨</span> 셰이더 설정 (lilToon)</h2>
+        <div class="card">
+          <p>본 제품은 lilToon에 최적화되어 있습니다. 마테리얼이 분홍색(에러)으로 표시되는 경우 아래를 확인해 주십시오:</p>
+          <br>
+          <ul>
+            <li>lilToon이 정상적으로 임포트되었는지 확인</li>
+            <li>마테리얼의 셰이더가 <code>lilToon</code>으로 설정되어 있는지 확인</li>
+            <li>텍스처가 제대로 할당되어 있는지 확인</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 5. Contents -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">📦</span> 내용물</h2>
+        <div class="card">
+          <ul>
+            <li>웹 매뉴얼 및 이용 약관 바로 가기</li>
+            <li>Unity Package (.unitypackage)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 6. Troubleshooting -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">🔧</span> 자주 묻는 질문 (Troubleshooting)</h2>
+        <div class="card">
+          <h3 class="card__title">Q. 옷이 분홍색(자홍색)으로 나와요</h3>
+          <p>lilToon이 없어서 발생하는 문제입니다. VCC (VRChat Creator Companion)를 통해 lilToon을 추가해 주세요.</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Q. 살이 옷을 뚫고 나와요(관통 현상)</h3>
+          <p>비키니 쪽의 쉐이프 키(Shape keys)를 조절하여 크기를 키우거나, 아바타 소체의 바디 쉐이프 키를 조절해 주십시오.</p>
+        </div>
+      </section>
+
+    </div><!-- /lang-ko -->
+
+
+  </div><!-- /container -->
+
+  <hr class="divider">
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p class="footer__text">© 2026 Pokonya_shop — All Rights Reserved.</p>
+    <div class="footer__links">
+      <a href="terms.html">📜 利用規約 / Terms of Use</a>
+      <a href="https://pokonya-shop.booth.pm/" target="_blank" rel="noopener">🏪 BOOTH Shop</a>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTopBtn" aria-label="ページトップへ">↑</button>
+
+  <script>
+    /* ---- Language Tabs ---- */
+    document.querySelectorAll('.lang-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.lang-tab').forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        document.querySelectorAll('.lang-content').forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+        document.getElementById('lang-' + tab.dataset.lang).classList.add('active');
+      });
+    });
+
+    /* ---- Scroll to Top ---- */
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      scrollBtn.classList.toggle('visible', window.scrollY > 300);
+    });
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    /* ---- URL param lang ---- */
+    const params = new URLSearchParams(window.location.search);
+    const langParam = params.get('lang');
+    if (langParam) {
+      const targetTab = document.querySelector(`.lang-tab[data-lang="${langParam}"]`);
+      if (targetTab) targetTab.click();
+    }
+  </script>
+
+</body>
+</html>
