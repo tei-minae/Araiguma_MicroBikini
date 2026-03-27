@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <!-- ========== HERO ========== -->
   <header class="hero">
     <div class="container">
@@ -18,7 +17,6 @@
       <span class="hero__badge">📖 Pokonya_shop Official Manual</span>
     </div>
   </header>
-
   <!-- ========== LANGUAGE TABS ========== -->
   <div class="container">
     <div class="lang-tabs" role="tablist">
@@ -27,12 +25,10 @@
       <button class="lang-tab" data-lang="zh" role="tab" aria-selected="false">🇨🇳 中文</button>
       <button class="lang-tab" data-lang="ko" role="tab" aria-selected="false">🇰🇷 한국어</button>
     </div>
-
     <!-- ==============================
          日本語 (JA)
          ============================== -->
     <div class="lang-content active" id="lang-ja">
-
       <div class="alert alert--warn">
         <span class="alert-icon">⚠️</span>
         <div>
@@ -41,7 +37,6 @@
           本マニュアルの記載内容と利用規約の間に矛盾がある場合は、利用規約が優先されます。
         </div>
       </div>
-
       <!-- 1. 概要 -->
       <section class="section">
         <h2 class="section__title"><span class="icon">✨</span> 商品概要</h2>
@@ -58,7 +53,6 @@
           <p class="tag tag--cond">※もちふぃった～適正のある『しなの』を元に調整しています。他アバターへの対応は保証しておりません。</p>
         </div>
       </section>
-
       <!-- 2. 動作環境 -->
       <section class="section">
         <h2 class="section__title"><span class="icon">💻</span> 動作環境</h2>
@@ -77,18 +71,15 @@
           </div>
         </div>
       </section>
-
       <!-- 3. 導入手順 -->
       <section class="section">
         <h2 class="section__title"><span class="icon">🚀</span> 導入手順（Installation）</h2>
-
         <div class="alert alert--info">
           <span class="alert-icon">💡</span>
           <div>
             <strong>事前準備</strong>：lilToon と Modular Avatar を先にUnityプロジェクトへインポートしておいてください。
           </div>
         </div>
-
         <div class="card">
           <div class="steps">
             <div class="step">
@@ -119,8 +110,58 @@
           </div>
         </div>
       </section>
-
-      <!-- 4. シェーダー設定 -->
+      <!-- 4. 指の貫通対策 -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">🐾</span> 指の貫通対策（アルファマスクの使用方法）</h2>
+        <div class="card">
+          <p>本製品のケモノハンドは、構造上「素体の手足」と重なるため、指や足が貫通して見えます。<br>
+          この問題は、付属のアルファマスクを使用することで解消できます。</p>
+          <br>
+          <h3 class="card__title">■ 方法概要</h3>
+          <p>素体の手足部分を透明化することで、ケモノハンドのみを表示させます。</p>
+          <br>
+          <h3 class="card__title">■ 手順</h3>
+          <ol>
+            <li>アバターの「Body」マテリアルを選択します</li>
+            <li>シェーダーを <strong>lilToon</strong> に設定します</li>
+            <li>Rendering Mode を <strong>Cutout</strong> に変更します</li>
+            <li><strong>「メインカラー」</strong>タブを開きます</li>
+            <li><strong>「アルファマスク」</strong>のプルダウンを「None」から<strong>「置き換え」</strong>に変更します</li>
+            <li>表示されたスロットに、付属のマスク画像（<code>HandMask.png</code>）を設定します</li>
+          </ol>
+          <br>
+          <h3 class="card__title">■ 設定後の状態</h3>
+          <ul>
+            <li>素体の手足が透明になります</li>
+            <li>ケモノハンド（および足）のみが表示されます</li>
+            <li>貫通が解消されます</li>
+          </ul>
+          <br>
+          <div class="alert alert--warn">
+            <span class="alert-icon">⚠️</span>
+            <div>
+              <strong>他のアバターで使用する場合</strong><br>
+              本製品に付属しているマスクは対応アバター専用です。他のアバターで使用する場合は、以下のようにマスク画像を作成してください。
+              <ul style="margin-top:0.5rem">
+                <li>手足の部分を <strong>黒</strong> に塗りつぶす</li>
+                <li>それ以外の部分を <strong>白</strong> に塗りつぶす</li>
+              </ul>
+              作成したマスク画像を、上記手順と同様にアルファマスクへ設定してください。
+            </div>
+          </div>
+          <br>
+          <h3 class="card__title">■ 注意点</h3>
+          <ul>
+            <li>lilToon以外のシェーダーでは使用できません</li>
+            <li>UV配置が異なるアバターでは正しく動作しない場合があります</li>
+          </ul>
+          <br>
+          <h3 class="card__title">■ 補足</h3>
+          <p>付属のマスク適用済みマテリアルを使用することで、設定を省略することも可能です。<br>
+          既にマテリアルを改変している場合は、上記手順でマスクのみを追加してください。</p>
+        </div>
+      </section>
+      <!-- 5. シェーダー設定 -->
       <section class="section">
         <h2 class="section__title"><span class="icon">🎨</span> シェーダー設定（lilToon 推奨値）</h2>
         <div class="card">
@@ -133,8 +174,7 @@
           </ul>
         </div>
       </section>
-
-      <!-- 5. 内容物 -->
+      <!-- 6. 内容物 -->
       <section class="section">
         <h2 class="section__title"><span class="icon">📦</span> 内容物</h2>
         <div class="card">
@@ -144,8 +184,7 @@
           </ul>
         </div>
       </section>
-
-      <!-- 6. トラブルシューティング -->
+      <!-- 7. トラブルシューティング -->
       <section class="section">
         <h2 class="section__title"><span class="icon">🔧</span> トラブルシューティング</h2>
         <div class="card">
@@ -157,15 +196,11 @@
           <p>ビキニ側のシェイプキーでスケールを調整するか、アバター側のボディシェイプキーを絞って調整してください。</p>
         </div>
       </section>
-
     </div><!-- /lang-ja -->
-
-
     <!-- ==============================
          English (EN)
          ============================== -->
     <div class="lang-content" id="lang-en">
-
       <div class="alert alert--warn">
         <span class="alert-icon">⚠️</span>
         <div>
@@ -174,7 +209,6 @@
           In case of any conflict between this manual and the Terms of Use, the Terms of Use shall prevail.
         </div>
       </div>
-
       <!-- 1. Overview -->
       <section class="section">
         <h2 class="section__title"><span class="icon">✨</span> Product Overview</h2>
@@ -191,7 +225,6 @@
           <p class="tag tag--cond">*Adjusted based on "Shinano", who possesses a high "Mochi Fitter" aptitude. Compatibility with other avatars is not guaranteed.</p>
         </div>
       </section>
-
       <!-- 2. Requirements -->
       <section class="section">
         <h2 class="section__title"><span class="icon">💻</span> System Requirements</h2>
@@ -210,18 +243,15 @@
           </div>
         </div>
       </section>
-
       <!-- 3. Installation -->
       <section class="section">
         <h2 class="section__title"><span class="icon">🚀</span> Installation</h2>
-
         <div class="alert alert--info">
           <span class="alert-icon">💡</span>
           <div>
             <strong>Prerequisites</strong>: Please import lilToon and Modular Avatar into your Unity project first.
           </div>
         </div>
-
         <div class="card">
           <div class="steps">
             <div class="step">
@@ -252,8 +282,58 @@
           </div>
         </div>
       </section>
-
-      <!-- 4. Shader Settings -->
+      <!-- 4. Clipping Prevention -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">🐾</span> Finger Clipping Prevention (Alpha Mask)</h2>
+        <div class="card">
+          <p>Due to the structure of the Kemono Hands in this product, they overlap with the base avatar's hands and feet, which can cause clipping.<br>
+          This issue can be resolved by using the included alpha mask.</p>
+          <br>
+          <h3 class="card__title">■ Overview</h3>
+          <p>By making the base avatar's hands and feet transparent, only the Kemono Hands will be visible.</p>
+          <br>
+          <h3 class="card__title">■ Procedure</h3>
+          <ol>
+            <li>Select the avatar's "Body" material.</li>
+            <li>Set the shader to <strong>lilToon</strong>.</li>
+            <li>Change the Rendering Mode to <strong>Cutout</strong>.</li>
+            <li>Open the <strong>"Main Color"</strong> tab.</li>
+            <li>Change the <strong>"Alpha Mask"</strong> dropdown from "None" to <strong>"Replace"</strong>.</li>
+            <li>Assign the included mask image (<code>HandMask.png</code>) to the displayed slot.</li>
+          </ol>
+          <br>
+          <h3 class="card__title">■ Result</h3>
+          <ul>
+            <li>The base avatar's hands and feet become transparent.</li>
+            <li>Only the Kemono Hands (and feet) are visible.</li>
+            <li>Clipping is resolved.</li>
+          </ul>
+          <br>
+          <div class="alert alert--warn">
+            <span class="alert-icon">⚠️</span>
+            <div>
+              <strong>When Using with Other Avatars</strong><br>
+              The included mask is exclusively for the supported avatar. If you wish to use it with other avatars, please create a mask image as follows:
+              <ul style="margin-top:0.5rem">
+                <li>Fill the hand and feet areas with <strong>Black</strong>.</li>
+                <li>Fill all other areas with <strong>White</strong>.</li>
+              </ul>
+              Apply the created mask image to the alpha mask slot using the same procedure above.
+            </div>
+          </div>
+          <br>
+          <h3 class="card__title">■ Notes</h3>
+          <ul>
+            <li>This cannot be used with shaders other than lilToon.</li>
+            <li>It may not work correctly on avatars with different UV layouts.</li>
+          </ul>
+          <br>
+          <h3 class="card__title">■ Additional Info</h3>
+          <p>You can skip the manual setup by using the included material with the mask already applied.<br>
+          If you have already modified your material, please follow the steps above to add only the mask.</p>
+        </div>
+      </section>
+      <!-- 5. Shader Settings -->
       <section class="section">
         <h2 class="section__title"><span class="icon">🎨</span> Shader Settings (lilToon)</h2>
         <div class="card">
@@ -266,8 +346,7 @@
           </ul>
         </div>
       </section>
-
-      <!-- 5. Contents -->
+      <!-- 6. Contents -->
       <section class="section">
         <h2 class="section__title"><span class="icon">📦</span> Contents</h2>
         <div class="card">
@@ -277,8 +356,7 @@
           </ul>
         </div>
       </section>
-
-      <!-- 6. Troubleshooting -->
+      <!-- 7. Troubleshooting -->
       <section class="section">
         <h2 class="section__title"><span class="icon">🔧</span> Troubleshooting</h2>
         <div class="card">
@@ -290,15 +368,11 @@
           <p>Adjust the scale using the bikini's shape keys, or shrink the avatar's body shape keys to prevent clipping.</p>
         </div>
       </section>
-
     </div><!-- /lang-en -->
-
-
     <!-- ==============================
          中文 (ZH)
          ============================== -->
     <div class="lang-content" id="lang-zh">
-
       <div class="alert alert--warn">
         <span class="alert-icon">⚠️</span>
         <div>
@@ -307,7 +381,6 @@
           如果本手册的内容与使用条款存在冲突，以使用条款为准。
         </div>
       </div>
-
       <!-- 1. Overview -->
       <section class="section">
         <h2 class="section__title"><span class="icon">✨</span> 商品概要</h2>
@@ -324,7 +397,6 @@
           <p class="tag tag--cond">※基于具有“Mochi Fitter（软糯贴合）”适性的『Shinano』进行调整。不保证完全适配其他模型。</p>
         </div>
       </section>
-
       <!-- 2. Requirements -->
       <section class="section">
         <h2 class="section__title"><span class="icon">💻</span> 运行环境</h2>
@@ -343,18 +415,15 @@
           </div>
         </div>
       </section>
-
       <!-- 3. Installation -->
       <section class="section">
         <h2 class="section__title"><span class="icon">🚀</span> 导入步骤（Installation）</h2>
-
         <div class="alert alert--info">
           <span class="alert-icon">💡</span>
           <div>
             <strong>事前准备</strong>：请先在 Unity 项目中导入 lilToon 和 Modular Avatar。
           </div>
         </div>
-
         <div class="card">
           <div class="steps">
             <div class="step">
@@ -385,8 +454,58 @@
           </div>
         </div>
       </section>
-
-      <!-- 4. Shader Settings -->
+      <!-- 4. Clipping Prevention -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">🐾</span> 手指穿模对策（Alpha遮罩使用方法）</h2>
+        <div class="card">
+          <p>由于本产品的兽爪在结构上与“素体手脚”重叠，因此会出现手指或脚部穿模的现象。<br>
+          该问题可以通过使用附带的Alpha遮罩（Alpha Mask）来解决。</p>
+          <br>
+          <h3 class="card__title">■ 方法概要</h3>
+          <p>通过将素体的手脚部分透明化，使其仅显示兽爪部分。</p>
+          <br>
+          <h3 class="card__title">■ 步骤</h3>
+          <ol>
+            <li>选择模型素体的“Body”材质（Material）</li>
+            <li>将着色器（Shader）设置为 <strong>lilToon</strong></li>
+            <li>将渲染模式（Rendering Mode）更改为 <strong>Cutout</strong></li>
+            <li>展开 <strong>“主颜色”（Main Color）</strong> 选项卡</li>
+            <li>将 <strong>“Alpha遮罩”（Alpha Mask）</strong> 的下拉菜单从“None”更改为 <strong>“替换”（Replace）</strong></li>
+            <li>将附带的遮罩图片（<code>HandMask.png</code>）拖入显示的槽位中</li>
+          </ol>
+          <br>
+          <h3 class="card__title">■ 设置后的效果</h3>
+          <ul>
+            <li>素体的手脚将变透明</li>
+            <li>仅显示兽爪（和兽脚）</li>
+            <li>穿模问题得到解决</li>
+          </ul>
+          <br>
+          <div class="alert alert--warn">
+            <span class="alert-icon">⚠️</span>
+            <div>
+              <strong>在其他模型上使用时</strong><br>
+              本产品附带的遮罩仅适用于指定适配模型。若要在其他模型上使用，请按以下方式自行制作遮罩图片：
+              <ul style="margin-top:0.5rem">
+                <li>将手脚区域涂成 <strong>黑色</strong></li>
+                <li>其余部分涂成 <strong>白色</strong></li>
+              </ul>
+              制作完成后，同样按照上述步骤将该图片设置为Alpha遮罩即可。
+            </div>
+          </div>
+          <br>
+          <h3 class="card__title">■ 注意事项</h3>
+          <ul>
+            <li>无法在 lilToon 以外的着色器上使用</li>
+            <li>如果模型的UV布局不同，可能无法正常工作</li>
+          </ul>
+          <br>
+          <h3 class="card__title">■ 补充说明</h3>
+          <p>您也可以直接使用附带的“已应用遮罩材质”来跳过此设置。<br>
+          如果您已经修改了材质，请按照上述步骤仅添加遮罩图片。</p>
+        </div>
+      </section>
+      <!-- 5. Shader Settings -->
       <section class="section">
         <h2 class="section__title"><span class="icon">🎨</span> 着色器设置（lilToon 推荐）</h2>
         <div class="card">
@@ -399,8 +518,7 @@
           </ul>
         </div>
       </section>
-
-      <!-- 5. Contents -->
+      <!-- 6. Contents -->
       <section class="section">
         <h2 class="section__title"><span class="icon">📦</span> 内容物</h2>
         <div class="card">
@@ -410,8 +528,7 @@
           </ul>
         </div>
       </section>
-
-      <!-- 6. Troubleshooting -->
+      <!-- 7. Troubleshooting -->
       <section class="section">
         <h2 class="section__title"><span class="icon">🔧</span> 常见问题解答 (Q&amp;A)</h2>
         <div class="card">
@@ -423,15 +540,11 @@
           <p>请调整比基尼的缩放形态键（Shape keys），或者缩小人物身体的素体形态键。</p>
         </div>
       </section>
-
     </div><!-- /lang-zh -->
-
-
     <!-- ==============================
          韩国어 (KO)
          ============================== -->
     <div class="lang-content" id="lang-ko">
-
       <div class="alert alert--warn">
         <span class="alert-icon">⚠️</span>
         <div>
@@ -440,7 +553,6 @@
           본 매뉴얼의 내용과 이용 약관이 상충할 경우, 이용 약관이 우선합니다.
         </div>
       </div>
-
       <!-- 1. Overview -->
       <section class="section">
         <h2 class="section__title"><span class="icon">✨</span> 상품 개요</h2>
@@ -457,7 +569,6 @@
           <p class="tag tag--cond">※'모찌핏(Mochi Fitter)' 적성이 있는 『시나노』를 기준으로 조절되었습니다. 타 아바타에 대한 완벽한 호환성은 보장하지 않습니다.</p>
         </div>
       </section>
-
       <!-- 2. Requirements -->
       <section class="section">
         <h2 class="section__title"><span class="icon">💻</span> 동작 환경</h2>
@@ -476,18 +587,15 @@
           </div>
         </div>
       </section>
-
       <!-- 3. Installation -->
       <section class="section">
         <h2 class="section__title"><span class="icon">🚀</span> 적용 방법 (Installation)</h2>
-
         <div class="alert alert--info">
           <span class="alert-icon">💡</span>
           <div>
             <strong>사전 준비</strong>: lilToon 및 Modular Avatar를 먼저 Unity 프로젝트에 임포트해 주십시오.
           </div>
         </div>
-
         <div class="card">
           <div class="steps">
             <div class="step">
@@ -518,8 +626,58 @@
           </div>
         </div>
       </section>
-
-      <!-- 4. Shader Settings -->
+      <!-- 4. Clipping Prevention -->
+      <section class="section">
+        <h2 class="section__title"><span class="icon">🐾</span> 손가락 관통 방지 대책 (알파 마스크 사용법)</h2>
+        <div class="card">
+          <p>본 제품의 짐승 앞발(케모노 핸드)은 구조상 '소체의 손발'과 겹치기 때문에 손가락이나 발이 뚫고 나오는 관통 현상이 발생합니다.<br>
+          이 문제는 동봉된 알파 마스크(Alpha Mask)를 사용하여 해결할 수 있습니다.</p>
+          <br>
+          <h3 class="card__title">■ 방법 개요</h3>
+          <p>소체의 손발 부분을 투명하게 처리하여 짐승 앞발만 표시되도록 합니다.</p>
+          <br>
+          <h3 class="card__title">■ 설정 순서</h3>
+          <ol>
+            <li>아바타의 'Body' 마테리얼을 선택합니다.</li>
+            <li>셰이더를 <strong>lilToon</strong>으로 설정합니다.</li>
+            <li>Rendering Mode를 <strong>Cutout</strong>으로 변경합니다.</li>
+            <li><strong>'메인 컬러(Main Color)'</strong> 탭을 엽니다.</li>
+            <li><strong>'알파 마스크(Alpha Mask)'</strong> 풀다운 메뉴를 'None'에서 <strong>'대체(Replace)'</strong>로 변경합니다.</li>
+            <li>표시된 슬롯에 동봉된 마스크 이미지(<code>HandMask.png</code>)를 설정합니다.</li>
+          </ol>
+          <br>
+          <h3 class="card__title">■ 설정 후 상태</h3>
+          <ul>
+            <li>소체의 손발이 투명해집니다.</li>
+            <li>짐승 앞발(및 뒷발)만 표시됩니다.</li>
+            <li>관통 현상이 해결됩니다.</li>
+          </ul>
+          <br>
+          <div class="alert alert--warn">
+            <span class="alert-icon">⚠️</span>
+            <div>
+              <strong>다른 아바타에서 사용할 경우</strong><br>
+              본 제품에 동봉된 마스크는 대응 아바타 전용입니다. 다른 아바타에서 사용할 경우 아래와 같이 마스크 이미지를 직접 제작해 주십시오.
+              <ul style="margin-top:0.5rem">
+                <li>손발 부분을 <strong>검은색</strong>으로 칠한다</li>
+                <li>그 외의 부분을 <strong>흰색</strong>으로 칠한다</li>
+              </ul>
+              제작한 마스크 이미지를 위와 같은 순서로 알파 마스크에 설정해 주십시오.
+            </div>
+          </div>
+          <br>
+          <h3 class="card__title">■ 주의사항</h3>
+          <ul>
+            <li>lilToon 이외의 셰이더에서는 사용할 수 없습니다.</li>
+            <li>UV 배치가 다른 아바타에서는 정상적으로 작동하지 않을 수 있습니다.</li>
+          </ul>
+          <br>
+          <h3 class="card__title">■ 참고</h3>
+          <p>마스크가 이미 적용된 동봉 마테리얼을 사용하면 설정을 생략할 수 있습니다.<br>
+          마테리얼을 이미 개변하신 경우, 위 순서대로 마스크만 추가해 주십시오.</p>
+        </div>
+      </section>
+      <!-- 5. Shader Settings -->
       <section class="section">
         <h2 class="section__title"><span class="icon">🎨</span> 셰이더 설정 (lilToon)</h2>
         <div class="card">
@@ -532,8 +690,7 @@
           </ul>
         </div>
       </section>
-
-      <!-- 5. Contents -->
+      <!-- 6. Contents -->
       <section class="section">
         <h2 class="section__title"><span class="icon">📦</span> 내용물</h2>
         <div class="card">
@@ -543,8 +700,7 @@
           </ul>
         </div>
       </section>
-
-      <!-- 6. Troubleshooting -->
+      <!-- 7. Troubleshooting -->
       <section class="section">
         <h2 class="section__title"><span class="icon">🔧</span> 자주 묻는 질문 (Troubleshooting)</h2>
         <div class="card">
@@ -556,14 +712,9 @@
           <p>비키니 쪽의 쉐이프 키(Shape keys)를 조절하여 크기를 키우거나, 아바타 소체의 바디 쉐이프 키를 조절해 주십시오.</p>
         </div>
       </section>
-
     </div><!-- /lang-ko -->
-
-
   </div><!-- /container -->
-
   <hr class="divider">
-
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <p class="footer__text">© 2026 Pokonya_shop — All Rights Reserved.</p>
@@ -572,10 +723,8 @@
       <a href="https://pokonya-shop.booth.pm/" target="_blank" rel="noopener">🏪 BOOTH Shop</a>
     </div>
   </footer>
-
   <!-- Scroll to Top -->
   <button class="scroll-top" id="scrollTopBtn" aria-label="ページトップへ">↑</button>
-
   <script>
     /* ---- Language Tabs ---- */
     document.querySelectorAll('.lang-tab').forEach(tab => {
@@ -587,10 +736,9 @@
         document.querySelectorAll('.lang-content').forEach(c => c.classList.remove('active'));
         tab.classList.add('active');
         tab.setAttribute('aria-selected', 'true');
-        document.getElementById('lang-' + tab.dataset.lang).classList.add('active');
+        document.getElementById('lang-' + tab.lang).classList.add('active');
       });
     });
-
     /* ---- Scroll to Top ---- */
     const scrollBtn = document.getElementById('scrollTopBtn');
     window.addEventListener('scroll', () => {
@@ -599,7 +747,6 @@
     scrollBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-
     /* ---- URL param lang ---- */
     const params = new URLSearchParams(window.location.search);
     const langParam = params.get('lang');
@@ -608,6 +755,5 @@
       if (targetTab) targetTab.click();
     }
   </script>
-
 </body>
 </html>
